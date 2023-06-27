@@ -9,10 +9,13 @@ public class Factorial {
         int numero = scanner.nextInt();
 
         int factorial = 1;
+        int i = 1;
 
-        for (int i = 1; i <= numero; i++) {
-            factorial *= i;
+        while(i <= numero){
+            factorial = factorial * i;
+            i++;
         }
+
 
         System.out.println("El factorial de " + numero + " es " + factorial);
     }
